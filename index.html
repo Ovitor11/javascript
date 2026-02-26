@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Aprendendo JavaScript</h1>
+<p id="texto"></p>
+<p id="texto-2">
+    <script>
+        document.write(5 + 5) /* mesma função que o innerHTML */
+        document.write("escrito com document.write!")
+    </script>
+</p>
+<button onclick="mostrarTemperatura()">Clique Aqui</button>
+<p id="texto-3"></p>
+
+<!-- EVENTOS -->
+
+ <!-- onclick -->
+  <p>onclick</p>
+ <button onclick="unClick()">CLIQUE AQUI!</button>
+
+ <!-- ondblclick -->
+  <p>ondblclick</p>
+  <button ondblclick="eventodblclick()">2 CLIQUES!</button>
+
+  <!-- onmouseover, onmousemove e onmouseout-->
+   <p>onmouseover, onmousemove e onmouseout</p>
+  <div id="teste" onmouseover="viraVermelho()" onmousemove="adicionaTexto()" onmouseout="voltaAzul()" style="margin: auto auto; width: 80%; height: 200px; background: blue;"></div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
